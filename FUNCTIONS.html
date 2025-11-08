@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            display: block;
+            margin:10px solid black;
+        }
+    </style>
+    <script>
+        function changetext(){
+            document.getElementById("id1").innerHTML=("javascript in html");
+
+        }
+        function changecolor(){
+            document.getElementById("id1").style.color=("blue")
+        } 
+        function changebgc(){
+            document.getElementById("id1").style.backgroundColor=("Yellow");
+        }
+    </script>
+</head>
+<body>
+    <h1 id="id1">JAVASCRIPT</h1>
+    <button onclick="changetext()">Click me to change text</button>
+    <button onclick="changecolor()"
+    >Click to change color</button>
+    <button onclick="changebgc()">click to change bckground</button>
+</body>
+</html>
